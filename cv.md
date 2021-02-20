@@ -70,8 +70,7 @@ I am currently employed in the software development and support company as a dat
 
 Consulting users by phone. Remote PC configuration. Software testing. Development of user manuals. Preparation of documentation for the description of entities, relationships and processes of the subject area.
 Participation in setting goals and developing technical specifications.Collection, analysis and documentation of functional requirements for software.
-Testing the developed system.
-Training of system users.
+Testing the developed system. Training of system users.
 
 **Languages**
 
