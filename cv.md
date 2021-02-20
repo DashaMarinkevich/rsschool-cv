@@ -24,3 +24,40 @@ I have an analytical mindset, communicative, persistent, able to formulate requi
 5. Outlook
 6. Java, C#
 7. XML, BPMN
+
+**Code examples - defining leap year**
+
+	'use strict';	
+	let yearStart = +prompt('Введите год для начала интервала:');
+	let yearEnd = +prompt ('Введите год для конца интервала:');
+	if(yearStart > yearEnd) {
+	  alert('Ошибка ввода! Год начала интервала больше года окончания!');
+	}
+	else {
+	  let result = getLeapYears(yearStart, yearEnd);
+	  if(result) {
+	    alert('В заданном интервале найдено '+ result +' високосных годов');
+	  }
+	  else {
+	    alert('В заданном интервале отсутствуют восокосные годы');
+	  }
+	}
+	function getLeapYears(yearS, yearE){
+	  let kolLeapYear=0;
+	  for (let i=yearS;i<=yearE;i++){
+	    if(i%4 === 0) {
+	      kolLeapYear++;
+	      console.log(`Год ${i} является високосным`);
+	    }
+	    else
+	    if (i%100 === 0 && i%400 === 0) {
+	      kolLeapYear++;
+	      console.log(`Год ${yearS} является високосным`);
+	    }
+	    else {
+	      console.log(`Год обычный`);
+	      continue;
+	    }
+	  }
+	  return kolLeapYear;
+	}
