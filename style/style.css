@@ -1,0 +1,282 @@
+ * {
+     /*свойство определяет способ вычисления высоты и ширины, border-box - учитывает границы и внутр. отступы*/
+     box-sizing: border-box;
+ }
+ /*свойство определяет способ вычисления высоты и ширины, border-box - учитывает границы и внутр. отступы - для псевдоэлементов*/
+ 
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+ /*Стили для всех элементов на странице*/
+ 
+ html,
+ body {
+     /*цвет фона*/
+     background: url(../img/noise.jpg);
+     /*отступы*/
+     padding: 0;
+     margin: 0;
+     /*семейство шрифтов*/
+     font-family: 'Montserrat', sans-serif;
+     /*размер шрифта*/
+     font-size: 18px;
+     font-weight: 400;
+     /*цвет шрифта*/
+     color: #333333;
+ }
+ 
+ a {
+     /*выделение ссылок*/
+     text-decoration: none;
+     /*цвет ссылок*/
+     color: inherit;
+ }
+ 
+ img {
+     /*максимальный размер изображений*/
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ button,
+ input {
+     /*стили шрифта*/
+     font: inherit;
+ }
+ /*отступы для заголовков, списков, абзацев*/
+ 
+ h1,
+ h2,
+ h3,
+ p,
+ ul {
+     padding: 0;
+     margin: 0;
+ }
+ 
+ ul {
+     /* стилизация списка*/
+     list-style: none;
+ }
+ 
+ .visually-hidden {
+     border: 0 !important;
+     /*границы*/
+     clip: rect(1px, 1px, 1px, 1px);
+     /*область прямоугольник*/
+     overflow: hidden;
+     /*прокрутка*/
+     height: 1px !important;
+     /*высота*/
+     padding: 0 !important;
+     /*отступы*/
+     position: absolute !important;
+     /*позиционирование*/
+     width: 1px !important;
+     /*ширина*/
+ }
+ 
+ .container {
+     /*максимальная ширина контейнера*/
+     max-width: 920px;
+     /* внешние отступы контейнера*/
+     margin: auto;
+ }
+ 
+ .section-title {
+     font-size: 24px;
+     color: #666;
+     font-weight: 700;
+ }
+ 
+ .btn {
+     text-align: center;
+     color: #FFFFFF;
+     font-size: 16px;
+     line-height: 1;
+     user-select: none;
+ }
+ 
+ .btn:hover {
+     cursor: pointer;
+ }
+ 
+ .menu__information {
+     padding-top: 30px;
+ }
+ 
+ .header__list {
+     display: flex;
+     flex-wrap: wrap;
+     flex-shrink: 0;
+     flex-grow: 0;
+ }
+ 
+ .header__item {
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     font-size: 18px;
+     line-height: 22px;
+     text-align: center;
+     margin-left: 40px;
+     margin-bottom: 10px;
+ }
+ 
+ .header__item:last-child {
+     margin-left: 61px;
+ }
+ 
+ .header__link {
+     padding-bottom: 10px;
+     color: #333333;
+ }
+ 
+ .header__link:hover {
+     color: #E1670E;
+ }
+ 
+ .first__section {
+     margin-top: 30px;
+ }
+ 
+ .banner__slide {
+     display: flex;
+     flex-wrap: nowrap;
+     flex-shrink: 0;
+     flex-grow: 0;
+     justify-content: start;
+ }
+ 
+ .banner__title {
+     align-self: center;
+     font-size: 30px;
+ }
+ 
+ .my__photo {
+     width: 200px;
+     margin-left: 148px;
+ }
+ 
+ #about-me {
+     margin-top: 30px;
+ }
+ 
+ .about__purpose {
+     padding-top: 10px;
+     width: 720px;
+     line-height: 25px;
+ }
+ 
+ .span__purpose {
+     display: block;
+     font-family: Georgia, Serif;
+     font-style: italic;
+     color: #666;
+ }
+ 
+ .about__text {
+     width: 720px;
+     line-height: 25px;
+ }
+ 
+ .skills__section {
+     margin-top: 30px;
+ }
+ 
+ .skills__nav {
+     margin-top: 20px;
+     margin-left: 27px;
+ }
+ 
+ .skills__list {
+     list-style: decimal;
+ }
+ 
+ .skills__item {
+     margin-bottom: 10px;
+ }
+ 
+ .code__section {
+     margin-top: 30px;
+ }
+ 
+ .code__text {
+     margin-top: 20px;
+     width: 720px;
+ }
+ 
+ .work__text {
+     margin-top: 20px;
+     line-height: 25px;
+     width: 720px;
+ }
+ 
+ .work-consult {
+     margin-top: 20px;
+ }
+ 
+ .work-consult__text {
+     margin-top: 20px;
+     line-height: 25px;
+     width: 720px;
+ }
+ 
+ .languages__section {
+     margin-top: 30px;
+ }
+ 
+ .langs__nav {
+     margin-top: 20px;
+     margin-left: 20px;
+ }
+ 
+ .langs__item {
+     margin-bottom: 20px;
+ }
+ 
+ .inform__section {
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+ 
+ .inform-socials {
+     display: flex;
+     flex-direction: row;
+     flex-grow: 0;
+     flex-shrink: 0;
+     justify-content: center;
+ }
+ 
+ .social__list {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ .social__link {
+     margin-right: 50px;
+     padding-top: 44.12px;
+     display: block;
+     color: transparent;
+     background-repeat: no-repeat;
+     height: 60px;
+     width: 60px;
+ }
+ 
+ .logo__link2 {
+     margin-right: 50px;
+ }
+ 
+ .social__link:hover,
+ .logo__link2:hover {
+     opacity: 50%;
+ }
+ 
+ .vk {
+     background-image: url(..//img/vk.png);
+ }
+ 
+ .inst {
+     background-image: url(..//img/instagram.png);
+ }
