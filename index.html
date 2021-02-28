@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Page Resume</title>
+    <link rel="stylesheet" href="style/normalize.css" />
+    <!--Предварительная загрузка шрифтов-->
+    <link rel="preload" href="./fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/fonts.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="menu__information">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">[Address]: Gamarnika Street, 20, Apt.45</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="tel:+375333206367" class="header__link">[Phone]: +375 (33) 320-63-67</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="mailto:dasha_marinkevich@mail.ru" class="header__link">[Email]: dasha_marinkevich@mail.ru</a></li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">[Skype]: dasha_marinkevich</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="first__section">
+            <h1 class="first__title visually-hidden">Avatar</h1>
+            <div class="container first__container">
+                <div class="banner">
+                    <div class="banner__slide">
+                        <h2 class="banner__title section-title">Darya Marinkevich</h2>
+                        <img src="img/my.jpeg" alt="Photo" class="my__photo" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-me">
+            <div class="container about-container">
+                <h2 class="about__title section-title">About me</h2>
+
+                <blockquote class="about__purpose">
+                    <span class="span__purpose"> Purpose:</span> Obtaining the position of a systems analyst, developing and gaining new knowledge in this area. I am also interested in web development, learning CSS and JS.
+                </blockquote>
+                <p class="about__text">
+                    I graduated from the Belarusian State University of Informatics and Radioelectronics in 2017. My specialty in computer science and logistics. I have an analytical mindset, communicative, persistent, able to formulate requirements in accordance with the
+                    tasks set. Hardworking and I love to learn.
+                </p>
+                <div class="skills__section">
+                    <h2 class="skills__title section-title">Skills</h2>
+                    <nav class="skills__nav">
+                        <ul class="skills__list">
+                            <li class="skills__item">HTML,CSS</li>
+                            <li class="skills__item">JavaScript</li>
+                            <li class="skills__item">Photoshop</li>
+                            <li class="skills__item">MS Office,PowerPoint</li>
+                            <li class="skills__item">Outlook</li>
+                            <li class="skills__item">Java, C#</li>
+                            <li class="skills__item">XML, BPMN</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="code__section">
+            <div class="code__container container">
+                <h2 class="code__title section-title">
+                    Code examples - Defining leap year
+                </h2>
+                <pre class="code__text">
+                  <code class="code__class">
+      'use strict';
+
+      let yearStart = +prompt('Введите год для начала интервала:');
+      let yearEnd = +prompt ('Введите год для конца интервала:');
+      if(yearStart > yearEnd)
+      {
+        alert('Ошибка ввода! Год начала интервала больше года окончания!');
+      }
+      else
+      {
+        let result = getLeapYears(yearStart, yearEnd);
+        if(result) {
+          alert('В заданном интервале найдено '+ result +' високосных годов');
+                  }
+        else {
+          alert('В заданном интервале отсутствуют восокосные годы');
+                 }
+        }
+          function getLeapYears(yearS, yearE)
+          {
+            let kolLeapYear=0;
+            for (let i=yearS;i<=yearE;i++){
+            if(i%4 === 0) {
+              kolLeapYear++;
+              console.log(`Год ${i} является високосным`);
+                }
+              else
+                if (i%100 === 0 && i%400 === 0) {
+                    kolLeapYear++;
+                    console.log(`Год ${yearS} является високосным`);
+                }
+               else {
+                    сonsole.log(`Год обычный`);
+                    continue;
+                   }
+              }
+                return kolLeapYear;
+          }
+            </code></pre>
+            </div>
+        </section>
+        <section class="work__section">
+            <div class="work__container container">
+                <h2 class="work__title section-title">Job experience</h2>
+                <p class="work__text">
+                    I am currently employed in the software development and support company as a data analyst. The key aspect of my job was providing technical data and writing technical documentation.
+                </p>
+                <div class="work-info">
+                    <div class="work-consult">
+                        <h3 class="work-consult__title">
+                            Top Soft, Minsk | 2017 – Present
+                        </h3>
+                        <p class="work-consult__text">
+                            Consulting users by phone. Remote PC configuration. Software testing. Development of user manuals. Preparation of documentation for the description of entities, relationships and processes of the subject area. Participation in setting goals and developing
+                            technical specifications.Collection, analysis and documentation of functional requirements for software. Testing the developed system. Training of system users.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="languages__section">
+            <div class="lang__container container">
+                <h2 class="lang__title section-title">Languages</h2>
+                <nav class="langs__nav">
+                    <ul class="langs__list">
+                        <li class="langs__item">English: Pre-Intermediate</li>
+                        <li class="langs">Polish: Basic</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="inform__section">
+            <div class="footer__container container">
+                <h2 class="inform__title visually-hidden">Social</h2>
+                <div class="inform-socials">
+                    <a href="https://dashamarinkevich.github.io/rsschool-cv/cv.md" title="Git resume link" class="logo__link2"><img src="img/git.png" alt="Git" class="logo__img" /></a>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="https://www.vk.com/" target="_blank" class="social__link vk"></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instaram.com/" target="_blank" class="social__link inst"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
